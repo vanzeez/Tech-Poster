@@ -3,33 +3,45 @@ function addHoverEffects() {
     const poster = document.querySelector('.poster img');
     const heading = document.querySelector('.heading');
     const eventDetails = document.querySelector('.event-details');
-    container.addEventListener('mouseover', () => {
-        container.style.boxShadow = '0 0 40px rgba(255, 0, 0, 0.8)';
+    
+    container.addEventListener('mouseenter', () => {
+        container.style.boxShadow = '0 0 40px rgba(52, 152, 219, 0.8)';
     });
-    container.addEventListener('mouseout', () => {
-        container.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.5)';
+
+    container.addEventListener('mouseleave', () => {
+        container.style.boxShadow = '0 0 20px rgba(52, 152, 219, 0.5)';
     });
-    poster.addEventListener('mouseover', () => {
-        poster.style.transform = 'scale(1.1)';
+
+    poster.addEventListener('mouseenter', () => {
+        poster.style.transform = 'scale(1.05)';
     });
-    poster.addEventListener('mouseout', () => {
+
+    poster.addEventListener('mouseleave', () => {
         poster.style.transform = 'scale(1)';
     });
-    heading.addEventListener('mouseover', () => {
-        heading.style.color = 'red';
+
+    heading.addEventListener('mouseenter', () => {
+        heading.style.color = '#2980b9'; /* Darker Blue */
     });
-    heading.addEventListener('mouseout', () => {
-        heading.style.color = '#ffcc00';
+
+    heading.addEventListener('mouseleave', () => {
+        heading.style.color = '#3498db'; /* Shaded Blue */
     });
-    eventDetails.addEventListener('mouseover', () => {
+
+    eventDetails.addEventListener('mouseenter', () => {
+        eventDetails.style.transform = 'scale(1.02)';
     });
-    eventDetails.addEventListener('mouseout', () => {
+
+    eventDetails.addEventListener('mouseleave', () => {
+        eventDetails.style.transform = 'scale(1)';
     });
 }
+
 addHoverEffects();
+
 particlesJS('particles-js', {
     particles: {
-        number: { value: 200, density: { enable: true, value_area: 800 } }, // Increased number of particles
+        number: { value: 200, density: { enable: true, value_area: 800 } },
         color: { value: '#ffffff' },
         shape: { type: 'circle', stroke: { width: 0, color: '#000000' }, polygon: { nb_sides: 5 } },
         opacity: { value: 0.2, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
