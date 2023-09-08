@@ -39,9 +39,11 @@ body {
     padding: 10px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
+    max-width: 90%;
+    max-height: 70vh; 
+    margin: 0 auto; 
     filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)); /* Add a drop shadow */
 }
-
 .event-details {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
