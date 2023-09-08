@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1.0);
+    background-size: cover;
+    background-blur: 5px; /* Add a blur effect to the background */
 }
 
 .container {
@@ -11,6 +13,7 @@ body {
     padding: 50px;
     z-index: 1;
     color: white;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .heading {
@@ -18,20 +21,38 @@ body {
     font-weight: bold;
     color: #ffcc00;
     margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.poster {
+    border: 5px solid #ffcc00;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)); /* Add a drop shadow */
 }
 
 .event-details {
-    margin-top: 20px;
-    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.detail {
-    margin: 5px 0;
-}
-
-.description {
-    font-size: 20px;
-    margin-top: 30px;
+.event-details:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Change background color on hover */
 }
 
 .register-button {
@@ -48,4 +69,11 @@ body {
 
 .register-button:hover {
     background-color: #cc0000;
+    transform: scale(1.1); /* Add a scale effect on hover */
+}
+
+.description {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 1.5; /* Add line height for better readability */
 }
