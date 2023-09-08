@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #192a56; /* Dark Blue */
+    background-color: black; 
     background-size: cover;
 }
 
@@ -18,17 +18,25 @@ body {
     text-align: center;
     padding: 50px;
     z-index: 1;
-    color: #f5e1da; /* Cream */
+    color: #f5e1da ; 
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .heading {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: bold;
-    color: #3498db; /* Shaded Blue */
+    color: #8abbdc; 
     margin: 0;
     transition: color 0.3s ease-in-out;
-    font-family: 'Helvetica', sans-serif; /* Change to a good heading font */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.heading:hover {
+    text-shadow: #3ea9f0;
+    transform: scale(1.5);
+    text-decoration: double;
+    transition: transform 0.5s ease-in-out;
+    color: aqua;
 }
 
 .content-container {
@@ -37,69 +45,77 @@ body {
     align-items: center;
     margin-top: 50px;
     gap: 40px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .poster {
-    border: 5px solid #3498db; /* Shaded Blue */
+    position: relative;
+    border: 5px solid #8abbdc; 
     border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8); /* Improved glow effect */
-    transition: transform 0.3s ease-in-out;
     max-width: 90%;
     width: 50%;
-    max-height: 70vh;
-    aspect-ratio: 4/5;
     margin: 0 auto;
-    filter: drop-shadow(0 0 5px rgba(52, 152, 219, 0.8)); /* Subtle drop shadow */
-    opacity: 0.9; /* Slight fading effect */
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8); 
+    aspect-ratio: 1080/1350; 
+    overflow: hidden;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: transform 0.5s ease-in-out;
 }
 
 .event-details {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(29, 80, 102, 0.4);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    box-shadow: 0 0 10px #8abbdc;
     text-align: left;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
     width: 50%;
-    color: #fff; /* White text color for better readability */
+    color: #fff; 
 }
 
 .event-details:hover {
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background on hover */
-    transform: scale(1.02); /* Subtle pop-up effect on hover */
+    background-color: rgba(80, 200, 248, 0.6); 
+    transform: scale(1.02); 
 }
 
 .register-button {
     display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px 20px;
-    background-color: #3498db; /* Shaded Blue */
-    color: #fff; /* White text color */
+    background-color: #04335c; 
+    color: #fff; 
     font-size: 18px;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: background-color 0.7s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .register-button:hover {
-    background-color: #2980b9; /* Darker Blue on hover */
-    transform: scale(1.02); /* Subtle pop-up effect on hover */
+    background-color: #2b92d7; 
+    transform: scale(1.01); 
+    color: yellow;
 }
 
 .description {
     font-size: 20px;
     margin-top: 30px;
     line-height: 1.5;
-    font-family: 'Times New Roman', serif; /* Creative typography style */
-    font-style: italic;
-    color: #f5e1da; /* Cream text color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-style: bold;
+    color: #aad7ea; 
     transition: transform 0.3s ease-in-out;
 }
 
 .description:hover {
-    transform: rotate(-2deg); /* Slight rotation on hover */
+    transform: scale(1.1);
+    text-decoration: wavy;
+    color: #2cc0d7;
 }
 
 @media screen and (max-width: 600px) {
@@ -107,7 +123,7 @@ body {
         flex-direction: column;
     }
     .poster {
-        width: 100%;
+        width: 50%;
     }
     .event-details {
         width: 100%;
