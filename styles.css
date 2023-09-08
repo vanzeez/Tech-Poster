@@ -6,28 +6,17 @@ body {
     background-size: cover;
 }
 
-.particle {
-    width: 100vw;
-    min-height: 100vh;
-    position: fixed;
-    pointer-events: none;
-}
-
 .container {
-    position: relative;
     text-align: center;
     padding: 50px;
-    z-index: 1;
-    color: #f5e1da; /* Cream */
-    transition: box-shadow 0.3s ease-in-out;
+    color: #fff; /* White */
 }
 
 .heading {
     font-size: 36px;
     font-weight: bold;
-    color: #3498db; /* Blue */
+    color: #3498db; /* Shaded Blue */
     margin: 0;
-    transition: color 0.3s ease-in-out;
 }
 
 .content-container {
@@ -36,71 +25,50 @@ body {
     align-items: center;
     margin-top: 50px;
     gap: 40px;
-    transition: transform 0.3s ease-in-out;
 }
 
 .poster {
-    border: 5px solid #3498db; /* Blue */
+    border: 5px solid #3498db; /* Shaded Blue */
     border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Subtle glow effect */
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Added opacity transition */
-    max-width: 90%;
-    width: 50%;
-    max-height: 70vh;
-    aspect-ratio: 4/5;
-    margin: 0 auto;
-    filter: drop-shadow(0 0 5px rgba(52, 152, 219, 0.8)); /* Subtle drop shadow */
-    opacity: 0.9; /* Slight fading effect */
-}
-
-.poster:hover {
-    transform: scale(1.02); /* Subtle pop-up effect on hover */
-    opacity: 1; /* Restore opacity on hover */
+    max-width: 100%;
+    height: auto;
 }
 
 .event-details {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
     text-align: left;
-    transition: background-color 0.3s ease-in-out;
     width: 50%;
-}
-
-.event-details:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.02); /* Subtle pop-up effect on hover */
+    color: #fff; /* White */
 }
 
 .register-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3498db; /* Blue */
-    color: white;
+    background-color: #3498db; /* Shaded Blue */
+    color: #fff; /* White */
     font-size: 18px;
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.register-button:hover {
-    background-color: #2980b9; /* Darker Blue */
-    transform: scale(1.02); /* Subtle pop-up effect on hover */
 }
 
 .description {
     font-size: 20px;
     margin-top: 30px;
     line-height: 1.5;
-    font-family: 'Times New Roman', serif; /* Creative typography style */
     font-style: italic;
-    color: #f5e1da; /* Cream */
-    transition: transform 0.3s ease-in-out;
 }
 
-.description:hover {
-    transform: rotate(-2deg); /* Slight rotation on hover */
+@media screen and (max-width: 600px) {
+    .content-container {
+      flex-direction: column;
+    }
+    .poster {
+        width: 100%;
+    }
+    .event-details {
+        width: 100%;
+    }
 }
