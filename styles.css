@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Dark Black */
+    background-color: #192a56; /* Dark Blue */
     background-size: cover;
 }
 
@@ -18,14 +18,14 @@ body {
     text-align: center;
     padding: 50px;
     z-index: 1;
-    color: ivory; /* Cream */
+    color: #f5e1da; /* Cream */
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .heading {
     font-size: 36px;
     font-weight: bold;
-    color: dodgerblue; /* Shaded Blue */
+    color: #3498db; /* Shaded Blue */
     margin: 0;
     transition: color 0.3s ease-in-out;
     font-family: 'Helvetica', sans-serif; /* Change to a good heading font */
@@ -41,17 +41,17 @@ body {
 }
 
 .poster {
-    border: 5px solid dodgerblue; /* Shaded Blue */
+    border: 5px solid #3498db; /* Shaded Blue */
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 0 0 20px cornflowerblue; /* Improved glow effect */
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8); /* Improved glow effect */
     transition: transform 0.3s ease-in-out;
     max-width: 90%;
     width: 50%;
     max-height: 70vh;
     aspect-ratio: 4/5;
     margin: 0 auto;
-    filter: drop-shadow(0 0 5px cornflowerblue); /* Subtle drop shadow */
+    filter: drop-shadow(0 0 5px rgba(52, 152, 219, 0.8)); /* Subtle drop shadow */
     opacity: 0.9; /* Slight fading effect */
 }
 
@@ -59,11 +59,11 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px cornflowerblue;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
     text-align: left;
     transition: background-color 0.3s ease-in-out;
     width: 50%;
-    color: white; /* White text color for better readability */
+    color: #fff; /* White text color for better readability */
 }
 
 .event-details:hover {
@@ -74,8 +74,8 @@ body {
 .register-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: dodgerblue; /* Shaded Blue */
-    color: white; /* White text color */
+    background-color: #3498db; /* Shaded Blue */
+    color: #fff; /* White text color */
     font-size: 18px;
     text-decoration: none;
     margin-top: 20px;
@@ -94,7 +94,7 @@ body {
     line-height: 1.5;
     font-family: 'Times New Roman', serif; /* Creative typography style */
     font-style: italic;
-    color: ivory; /* Cream text color */
+    color: #f5e1da; /* Cream text color */
     transition: transform 0.3s ease-in-out;
 }
 
