@@ -1,47 +1,41 @@
-// JavaScript to add hover effects
 function addHoverEffects() {
     const container = document.querySelector('.container');
     const poster = document.querySelector('.poster img');
     const heading = document.querySelector('.heading');
-
-    // Apply box shadow on container hover
+    const eventDetails = document.querySelector('.event-details');
     container.addEventListener('mouseover', () => {
-        container.style.boxShadow = '0 0 20px rgba(52, 152, 219, 0.8)';
+        container.style.boxShadow = '0 0 40px rgba(255, 0, 0, 0.8)';
     });
     container.addEventListener('mouseout', () => {
-        container.style.boxShadow = '0 0 10px rgba(52, 152, 219, 0.5)';
+        container.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.5)';
     });
-
-    // Apply scale on poster hover
     poster.addEventListener('mouseover', () => {
-        poster.style.transform = 'scale(1.02)';
+        poster.style.transform = 'scale(1.1)';
     });
     poster.addEventListener('mouseout', () => {
         poster.style.transform = 'scale(1)';
     });
-
-    // Change heading color on hover
     heading.addEventListener('mouseover', () => {
-        heading.style.color = '#3498db';
+        heading.style.color = 'red';
     });
     heading.addEventListener('mouseout', () => {
         heading.style.color = '#ffcc00';
     });
+    eventDetails.addEventListener('mouseover', () => {
+    });
+    eventDetails.addEventListener('mouseout', () => {
+    });
 }
-
-// Call the function to add hover effects
 addHoverEffects();
-
-// Particle.js settings
 particlesJS('particles-js', {
     particles: {
-        number: { value: 100, density: { enable: true, value_area: 800 } },
-        color: { value: '#3498db' },
-        shape: { type: 'circle' },
-        opacity: { value: 0.2, random: false },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: '#3498db', opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 6, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+        number: { value: 200, density: { enable: true, value_area: 800 } }, // Increased number of particles
+        color: { value: '#ffffff' },
+        shape: { type: 'circle', stroke: { width: 0, color: '#000000' }, polygon: { nb_sides: 5 } },
+        opacity: { value: 0.2, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+        size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+        line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 6, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
     },
     interactivity: {
         detect_on: 'canvas',
