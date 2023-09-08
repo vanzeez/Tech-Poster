@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgba(0, 0, 0, 1.0);
     background-size: cover;
-    background-blur: 5px; /* Add a blur effect to the background */
+    background-blur: 5px; 
 }
 
 .container {
@@ -42,7 +42,7 @@ body {
     max-width: 90%;
     max-height: 70vh; 
     margin: 0 auto; 
-    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)); /* Add a drop shadow */
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)); 
 }
 .event-details {
     background-color: rgba(0, 0, 0, 0.7);
@@ -54,7 +54,7 @@ body {
 }
 
 .event-details:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* Change background color on hover */
+    background-color: rgba(0, 0, 0, 0.9); 
 }
 
 .register-button {
@@ -71,11 +71,11 @@ body {
 
 .register-button:hover {
     background-color: #cc0000;
-    transform: scale(1.1); /* Add a scale effect on hover */
+    transform: scale(1.1); 
 }
 
 .description {
     font-size: 20px;
     margin-top: 30px;
-    line-height: 1.5; /* Add line height for better readability */
+    line-height: 1.5; 
 }
