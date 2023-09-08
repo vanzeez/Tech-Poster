@@ -43,19 +43,19 @@ body {
     border: 5px solid #3498db; /* Blue */
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5); /* Improved glow effect */
-    transition: transform 0.3s ease-in-out, opacity 1s ease-in-out; /* Added opacity transition */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Subtle glow effect */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Added opacity transition */
     max-width: 90%;
     width: 50%;
     max-height: 70vh;
     aspect-ratio: 4/5;
     margin: 0 auto;
-    filter: drop-shadow(0 0 10px rgba(52, 152, 219, 0.8)); /* Improved drop shadow */
-    opacity: 0.8; /* Fading effect */
+    filter: drop-shadow(0 0 5px rgba(52, 152, 219, 0.8)); /* Subtle drop shadow */
+    opacity: 0.9; /* Slight fading effect */
 }
 
 .poster:hover {
-    transform: scale(1.05); /* Slight pop-up effect on hover */
+    transform: scale(1.02); /* Subtle pop-up effect on hover */
     opacity: 1; /* Restore opacity on hover */
 }
 
@@ -63,7 +63,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
     text-align: left;
     transition: background-color 0.3s ease-in-out;
     width: 50%;
@@ -71,7 +71,7 @@ body {
 
 .event-details:hover {
     background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.05); /* Pop-up effect on hover */
+    transform: scale(1.02); /* Subtle pop-up effect on hover */
 }
 
 .register-button {
@@ -88,7 +88,7 @@ body {
 
 .register-button:hover {
     background-color: #2980b9; /* Darker Blue */
-    transform: scale(1.1); /* Slight pop-up effect on hover */
+    transform: scale(1.02); /* Subtle pop-up effect on hover */
 }
 
 .description {
@@ -102,5 +102,5 @@ body {
 }
 
 .description:hover {
-    transform: rotate(-5deg); /* Creative hover effect */
+    transform: rotate(-2deg); /* Slight rotation on hover */
 }
