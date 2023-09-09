@@ -20,6 +20,18 @@
                 <p class="detail">📍 Venue: Lab-5</p>
                 <p class="detail">🏆 The champion takes home an epic prize</p>
                 <p class="detail">🔥 All participants receive a Certificate of Participation (E-Certificate)</p>
+                <button class="view-rules-button" onclick="showRules()">View Rules</button>
+                <div id="rules-popup" class="popup">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <h2 class="popup-heading">RULES</h2>
+                    <ul class="popup-rules">
+                        <li>Participation should be individual, and group submissions are not allowed.</li>
+                        <li>Participants are kindly asked to bring their personal supplies and drawing sheets for creating the poster. Preferably, sheets used in the engineering drawing subject should be used.</li>
+                        <li>Participants will have a designated 1-hour timeframe to finish their posters.</li>
+                        <li>The winner will receive a commemorative memento as an award.</li>
+                        <li>All other participants will be presented with E-certificates, which will be sent to their respective email addresses.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <p class="description">
@@ -27,8 +39,103 @@
             Craft Tech-themed posters on the spot for a chance to win big and grab the limelight.<br>
         </p>
         <a href="https://forms.gle/RnjJJoFhS4yWaQXAA" class="register-button">Register Now</a>
+    
+        <h2 class="team-heading">Meet Our Team</h2>
+        <div class="team-members">
+  
+            <div class="team-member">
+                <img src="assets/shubham.jpg" alt="Team Member 1">
+                <p class="team-member-name">Shubham Yadav</p>
+                <p class="team-member-designation">Core Team Member</p>
+            </div>
+
+            <div class="team-member">
+                <img src="assets/kashish.jpg" alt="Team Member 2">
+                <p class="team-member-name">Kashish Sukhija</p>
+                <p class="team-member-designation">Core Team Member</p>
+            </div>
+
+            <div class="team-member">
+                <img src="assets/sid.jpg" alt="Team Member 2">
+                <p class="team-member-name">Siddhant Verma</p>
+                <p class="team-member-designation">Core Team Member</p>
+            </div>
+            
+
+            <div class="team-member">
+                <img src="assets/vanshii.jpg" alt="Team Member 3">
+                <p class="team-member-name">Vanshika Gupta</p>
+                <p class="team-member-designation">Event Manager, Webpage Developer</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="assets/vidisha.jpg" alt="Team Member 4">
+                <p class="team-member-name">Vidisha</p>
+                <p class="team-member-designation">Volunteer</p>
+            </div>
+
+            <div class="team-member">
+                <img src="assets/ridhima.jpg" alt="Team Member 5">
+                <p class="team-member-name">Riddhima</p>
+                <p class="team-member-designation">Volunteer</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="assets/sahiba.jpg" alt="Team Member 6">
+                <p class="team-member-name">Sahiba</p>
+                <p class="team-member-designation">Volunteer</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="assets/vanshika.jpg" alt="Team Member 7">
+                <p class="team-member-name">Vanshika</p>
+                <p class="team-member-designation">Volunteer</p>
+            </div>
+            
+            <div class="team-member">
+                <img src="assets/aman.jpg" alt="Team Member 8">
+                <p class="team-member-name">Aman Gupta</p>
+                <p class="team-member-designation">Photographer, Videographer</p>
+            </div>
+            
+        </div>
+
+        <h2 class="team-heading">The Teacher Coordinators</h2>
+        <div class="teacher-coordinators">
+            <div class="teacher-member">
+                <img src="assets/prachi.jpg" alt="Teacher Coordinator 1">
+                <p class="team-member-name">Dr. Prachi Dewan</p>
+                <p class="team-member-designation">Teacher In-Charge</p>
+            </div>
+            
+            <div class="teacher-member">
+                <img src="assets/manisha.jpg" alt="Teacher Coordinator 2">
+                <p class="team-member-name">Dr. Manisha Mittal</p>
+                <p class="team-member-designation">Teacher In-Charge</p>
+            </div>
+        </div>
+
+        <div class="sanchaar-button">
+            <a href="http://techmaticsolutions.com" class="sanchaar-link">Sanchaar 2K23</a>
+            <a href="https://instagram.com/techfest_sanchaar_official?igshid=NzZhOTFlYzFmZQ==" class="instagram-link">Follow us on Instagram</a>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <script src="script.js"></script>
+
+    <script>
+        function showRules() {
+            const popup = document.getElementById('rules-popup');
+            popup.style.display = 'block';
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('rules-popup');
+            popup.style.display = 'none';
+        }
+
+        window.onscroll = function() {scrollFunction()};
+    </script>
 </body>
 </html>
