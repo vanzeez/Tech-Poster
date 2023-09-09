@@ -64,54 +64,55 @@
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/sid.jpg" alt="Team Member 2">
+                <img src="assets/sid.jpg" alt="Team Member 3">
                 <div class="about-member">
                     <p class="team-member-name">Siddhant Verma</p>
                     <p class="team-member-designation">Core Team Member</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/vanshii.jpg" alt="Team Member 3">
+                <img src="assets/vanshii.jpg" alt="Team Member 4">
                 <div class="about-member">
                     <p class="team-member-name">Vanshika Gupta</p>
                     <p class="team-member-designation">Event Manager, Webpage Developer</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/vidisha.jpg" alt="Team Member 4">
+                <img src="assets/vidisha.jpg" alt="Team Member 5">
                 <div class="about-member">
                     <p class="team-member-name">Vidisha</p>
                     <p class="team-member-designation">Volunteer</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/ridhima.jpg" alt="Team Member 5">
+                <img src="assets/ridhima.jpg" alt="Team Member 6">
                 <div class="about-member">
                     <p class="team-member-name">Riddhima</p>
                     <p class="team-member-designation">Volunteer</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/sahiba.jpg" alt="Team Member 6">
+                <img src="assets/sahiba.jpg" alt="Team Member 7">
                 <div class="about-member">
                     <p class="team-member-name">Sahiba</p>
                     <p class="team-member-designation">Volunteer</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/vanshika.jpg" alt="Team Member 7">
+                <img src="assets/vanshika.jpg" alt="Team Member 8">
                 <div class="about-member">
                     <p class="team-member-name">Vanshika</p>
                     <p class="team-member-designation">Volunteer</p>
                 </div>
             </div>
             <div class="team-member">
-                <img src="assets/aman.jpg" alt="Team Member 8">
+                <img src="assets/aman.jpg" alt="Team Member 9">
                 <div class="about-member">
                     <p class="team-member-name">Aman Gupta</p>
                     <p class="team-member-designation">Photographer, Videographer</p>
                 </div>
             </div>
+            <!-- Add more team members here -->
         </div>
 
         <div class="section-divider"></div>
@@ -132,6 +133,7 @@
                     <p class="team-member-designation">Teacher In-Charge</p>
                 </div>
             </div>
+            <!-- Add more teacher coordinators here -->
         </div>
 
         <div class="section-divider"></div>
@@ -144,9 +146,20 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-
     <script>
+        // Initialize Particle.js
+        function initializeParticles() {
+            particlesJS('particles-js', {
+                particles: {
+                    // Particle configuration settings
+                },
+                interactivity: {
+                    // Interactivity settings
+                },
+                retina_detect: true
+            });
+        }
+
         function showRules() {
             const popup = document.getElementById('rules-popup');
             popup.style.display = 'block';
@@ -157,8 +170,11 @@
             popup.style.display = 'none';
         }
 
+        window.onload = initializeParticles;
         window.onscroll = function () { scrollFunction() };
     </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
