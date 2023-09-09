@@ -275,7 +275,7 @@ body {
     display: inline-block;
     background-color: #3498db;
     color: #fff;
-    padding: 15px 30px; /* Rectangular shape */
+    padding: 15px 30px; 
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
@@ -293,7 +293,7 @@ body {
     display: inline-block;
     background-color: #3498db;
     color: #fff;
-    padding: 15px 30px; /* Rectangular shape */
+    padding: 15px 30px; 
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
@@ -301,6 +301,7 @@ body {
     box-shadow: 0 0 0 rgba(52, 152, 219, 0.8);
     text-align: center;
     margin-top: 40px;
+    margin-left: 20px;
 }
 
 .follow-us-button:hover {
@@ -313,7 +314,7 @@ body {
 .section-divider {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .section-divider::after {
