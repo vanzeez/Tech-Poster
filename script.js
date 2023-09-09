@@ -3,7 +3,7 @@ function addHoverEffects() {
     const poster = document.querySelector('.poster img');
     const heading = document.querySelector('.heading');
     const eventDetails = document.querySelector('.event-details');
-    
+
     container.addEventListener('mouseenter', () => {
         container.style.boxShadow = '0 0 40px rgba(52, 152, 219, 0.8)';
     });
@@ -21,11 +21,11 @@ function addHoverEffects() {
     });
 
     heading.addEventListener('mouseenter', () => {
-        heading.style.color = '#2980b9'; /* Darker Blue */
+        heading.style.color = '#2980b9';
     });
 
     heading.addEventListener('mouseleave', () => {
-        heading.style.color = '#3498db'; /* Shaded Blue */
+        heading.style.color = '#3498db';
     });
 
     eventDetails.addEventListener('mouseenter', () => {
@@ -38,6 +38,58 @@ function addHoverEffects() {
 }
 
 addHoverEffects();
+
+function showRules() {
+    const popup = document.getElementById('rules-popup');
+    popup.style.display = 'block';
+}
+
+function closePopup() {
+    const popup = document.getElementById('rules-popup');
+    popup.style.display = 'none';
+}
+
+function addTeamHoverEffects() {
+    const teamMembers = document.querySelectorAll('.team-member');
+
+    teamMembers.forEach((member) => {
+        member.addEventListener('mouseenter', () => {
+            member.style.transform = 'scale(1.05)';
+        });
+
+        member.addEventListener('mouseleave', () => {
+            member.style.transform = 'scale(1)';
+        });
+    });
+}
+
+addTeamHoverEffects();
+
+function addTeacherHoverEffects() {
+    const teacherMembers = document.querySelectorAll('.teacher-member');
+
+    teacherMembers.forEach((member) => {
+        member.addEventListener('mouseenter', () => {
+            member.style.transform = 'scale(1.05)';
+        });
+
+        member.addEventListener('mouseleave', () => {
+            member.style.transform = 'scale(1)';
+        });
+    });
+}
+
+addTeacherHoverEffects();
+
+const sanchaarLink = document.querySelector('.sanchaar-link');
+sanchaarLink.addEventListener('click', (e) => {
+    window.location.href = 'http://techmaticsolutions.com';
+});
+
+const instagramLink = document.querySelector('.instagram-link');
+instagramLink.addEventListener('click', (e) => {
+    window.location.href = 'https://instagram.com/techfest_sanchaar_official?igshid=NzZhOTFlYzFmZQ==';
+});
 
 particlesJS('particles-js', {
     particles: {
