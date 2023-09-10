@@ -85,6 +85,7 @@ instagramLink.addEventListener('click', (e) => {
     window.location.href = 'https://instagram.com/techfest_sanchaar_official?igshid=NzZhOTFlYzFmZQ==';
 });
 
+document.addEventListener('DOMContentLoaded', function () {
 particlesJS('particles-js', {
     particles: {
         number: { value: 200, density: { enable: true, value_area: 800 } },
