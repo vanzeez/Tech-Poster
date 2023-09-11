@@ -10,7 +10,8 @@ body {
 
 .wrapper {
   animation: scroll 50s linear infinite;
-  background: rgba(17, 17, 17, 0.7), url("https://c4.wallpaperflare.com/wallpaper/70/220/916/technology-binary-numbers-code-wallpaper-preview.jpg");
+  background: url("https://c4.wallpaperflare.com/wallpaper/70/220/916/technology-binary-numbers-code-wallpaper-preview.jpg"),
+    #111111;
   color: #eee;
   height: 300vh;
   min-width: 360px;
