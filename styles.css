@@ -10,7 +10,7 @@ body {
 
 .wrapper {
   animation: scroll 50s linear infinite;
-  background: url("https://c4.wallpaperflare.com/wallpaper/70/220/916/technology-binary-numbers-code-wallpaper-preview.jpg"), #111111;
+  background-color: #000;
   color: #eee;
   height: 300vh;
   min-width: 360px;
@@ -20,7 +20,22 @@ body {
   align-items: center;
   perspective: 1000px;
   perspective-origin: 50% 50%;
+  position: relative; 
 }
+
+.wrapper::before {
+  content: "";
+  background: url("https://c4.wallpaperflare.com/wallpaper/70/220/916/technology-binary-numbers-code-wallpaper-preview.jpg");
+  opacity: 0.8; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1; 
+  background-size: cover;
+}
+
 
 @keyframes scroll {
   100% {
