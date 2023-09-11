@@ -10,8 +10,7 @@ body {
 
 .wrapper {
   animation: scroll 50s linear infinite;
-  background: url("https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"),
-    #111111;
+  background: url("https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NzZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"), #111111;
   color: #eee;
   height: 300vh;
   min-width: 360px;
