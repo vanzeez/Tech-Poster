@@ -26,7 +26,7 @@ body {
 .wrapper::before {
   content: "";
   background: url("https://c4.wallpaperflare.com/wallpaper/70/220/916/technology-binary-numbers-code-wallpaper-preview.jpg");
-  opacity: 0.5; 
+  opacity: 0.7; 
   top: 0;
   left: 0;
   right: 0;
