@@ -84,3 +84,12 @@ const instagramLink = document.querySelector('.instagram-link');
 instagramLink.addEventListener('click', (e) => {
     window.location.href = 'https://instagram.com/techfest_sanchaar_official?igshid=NzZhOTFlYzFmZQ==';
 });
+
+window.addEventListener("scroll", function() {
+    var footer = document.getElementById("footer");
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        footer.style.display = "block";
+    } else {
+        footer.style.display = "none";
+    }
+});
