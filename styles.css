@@ -409,6 +409,19 @@ body {
     margin-bottom: 10px;
 }
 
+footer {
+    background-color: #091f30; 
+    color: #2db6e8; 
+    text-align: center;
+    padding: 3px; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 12px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .close {
     position: absolute;
     top: 10px;
